@@ -22,7 +22,7 @@ public class SampleSpringAppController {
 	
 	@PostMapping(path = "/post/api")
 	public String getPostResponse(@RequestBody Request request) {
-		return "You called POST API to save id : " + request.getId() + " Name : " + request.getName();
+		return "You called POST API to save id : " + request.getId() + " and Name : " + request.getName();
 	}
 
 }
